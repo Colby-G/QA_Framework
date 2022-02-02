@@ -99,7 +99,7 @@ public class ReportUtil {
 		try {
 			fstream = new FileWriter(resultFilename, true);
 			out = new BufferedWriter(fstream);
-			out.write("<h4><FONT COLOR=660000 FACE=Arial SIZE=4>" + suiteName + " Report:</h4>\n");
+			out.write("<h4><FONT COLOR=660000 FACE=Arial SIZE=4>" + suiteName + " Cases:</h4>\n");
 			out.write("<table border=1 cellspacing=1 cellpadding=1 width=100%>\n");
 			out.write("<tr>\n");
 			out.write("<td width=10% align=center bgcolor=#153E7E><FONT COLOR=#E0E0E0 FACE=Arial SIZE=2><b>Test Case Number</b></td>\n");

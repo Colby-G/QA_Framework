@@ -30,7 +30,7 @@ public class TestController extends TestBase {
 		String BatchNumber = SuiteData.getCellData("TestCases", "BatchNumber", 2);
 		String startTime = TestBase.now("dd.MMMM.yyyy hh.mm.ss aaa");
 		ReportUtil.startTesting("index", startTime, TestingSuite, BatchNumber);
-		ReportUtil.startSuite("Suite1");
+		ReportUtil.startSuite("Test");
 		// Loop through the test cases.
 		for (int TC = 2; TC <= SuiteData.getRowCount("TestCases"); TC++) {
 			String TCStatus = "Passed";
