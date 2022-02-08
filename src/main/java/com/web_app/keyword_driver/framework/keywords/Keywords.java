@@ -206,11 +206,15 @@ public class Keywords extends TestBase {
 				logger.info("Failed: The 'inputText' keyword was called. The web element was not found: '" + webElement + "'");
 				return "Failed: The 'inputText' keyword was called. The web element was not found: '" + webElement + "'";
 			}
-			getWebElement(webElement).click();
-			getWebElement(webElement).clear();
+			WebElement element = getWebElement(webElement);
+			element.click();
+			element.clear();
+			Thread.sleep(75);
+			element.click();
+			Thread.sleep(75);
 			for (int string_character = 0; string_character < TestData.length(); string_character++) {
-				getWebElement(webElement).sendKeys(String.valueOf(TestData.charAt(string_character)));
-				Thread.sleep(10);
+				element.sendKeys(String.valueOf(TestData.charAt(string_character)));
+				Thread.sleep(15);
 			}
 		}
 		catch (Throwable t) {
