@@ -207,7 +207,6 @@ public class Keywords extends TestBase {
 				return "Failed: The 'inputText' keyword was called. The web element was not found: '" + webElement + "'";
 			}
 			WebElement element = getWebElement(webElement);
-			element.click();
 			element.clear();
 			Thread.sleep(75);
 			element.click();
